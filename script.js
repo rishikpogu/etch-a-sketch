@@ -8,7 +8,7 @@ function build (n) {
         container.appendChild(div);
     
         div.addEventListener('mouseenter', () => {
-            div.style.backgroundColor = 'red';
+            div.style.backgroundColor = getRandomColor();
         })
     }
 }
