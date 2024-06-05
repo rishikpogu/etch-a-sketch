@@ -6,9 +6,11 @@ function build (n) {
         let hw = 690/n
         div.setAttribute("style", `border: 1px solid black; width: ${hw}px; height: ${hw}px;`);
         container.appendChild(div);
-    
+        let opac = 1
         div.addEventListener('mouseenter', () => {
             div.style.backgroundColor = getRandomColor();
+            opac -= 0.1
+            div.style.opacity = opac
         })
     }
 }
